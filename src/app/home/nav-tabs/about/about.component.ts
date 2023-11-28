@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +7,48 @@ import { Component, OnInit } from '@angular/core';
   //styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  hometab: string = 'home';
+  abouttab: string = 'about';
+  resumetab: string = 'resume';
+  servicestab: string = 'services';
+  portfoliotab: string = 'portfolio';
+  contacttab: string = 'contact';
+  header: string = 'header';
+  homenavtab: string = 'hometab';
+  aboutnavtab: string = 'abouttab';
+  resumenavtab: string = 'resumetab';
+  servicesnavtab: string = 'servicestab';
+  portfolionavtab: string = 'portfoliotab';
+  contactnavtab: string = 'contacttab';
+  showinterestssection: boolean = false;
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+
+  opentab(event:any){
+    this.showinterestssection = false;
+
+    if(event.target.name == this.abouttab){
+    }
+    else if(event.target.name == this.resumetab){
+      this.router.navigate(['resume']);
+    }
+    else if(event.target.name == this.servicestab){
+      this.router.navigate(['services']);
+    }
+    else if(event.target.name == this.contacttab){
+      this.router.navigate(['contact']);
+    }
+    else if(event.target.name == this.portfoliotab){
+      this.router.navigate(['portfolio1']);
+    }
+    else{
+      this.showinterestssection = true;
+      this.router.navigate(['home']);
+    }
+  
   }
 
 }

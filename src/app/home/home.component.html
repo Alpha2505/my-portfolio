@@ -1,5 +1,5 @@
 <!-- ======= Header ======= -->
-<header id="header">
+<header  id="header">
     <div class="container">
 
         <h1><a routerLink="/home">Emily Jones</a></h1>
@@ -11,7 +11,7 @@
             <ul>
                 <li><a class="nav-link active" (click)="opentab($event)" id="hometab" name="home">Home</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="abouttab" name="about">About</a></li>
-                <li><a class="nav-link" (click)="opentab($event)" id="resumeab" name="resume">Resume</a></li>
+                <li><a class="nav-link" (click)="opentab($event)" id="resumetab" name="resume">Resume</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="servicestab" name="services">Services</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="portfoliotab" name="portfolio">Portfolio</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="contacttab" name="contact">Contact</a></li>
@@ -29,29 +29,8 @@
     </div>
 </header><!-- End Header -->
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-    <app-about></app-about>
-</section><!-- End About Section -->
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
-    <app-contact></app-contact>
-</section><!-- End Contact Section -->
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
-    <app-portfolio></app-portfolio>
-</section><!-- End Portfolio Section -->
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-    <app-resume></app-resume>
-</section><!-- End Resume Section -->
-<!-- ======= Services Section ======= -->
-<section id="services" class="services">
-    <app-services></app-services>
-</section><!-- End Services Section -->
-
 <!-- ======= Counts ======= -->
-<div class="counts container" *ngIf="showinterestssection">
+<div class="counts container" >
 
     <div class="row">
 
@@ -96,7 +75,7 @@
 </div><!-- End Counts -->
 
 <!-- ======= Skills  ======= -->
-<div class="skills container" *ngIf="showinterestssection">
+<div class="skills container" >
 
     <div class="section-title">
         <h2>Skills</h2>
@@ -165,7 +144,7 @@
 </div><!-- End Skills -->
 
 <!-- ======= Interests ======= -->
-<div class="interests container" *ngIf="showinterestssection">
+<div class="interests container" >
 
     <div class="section-title">
         <h2>Interests</h2>
@@ -249,7 +228,7 @@
 </div><!-- End Interests -->
 
 <!-- ======= Testimonials ======= -->
-<div class="testimonials container" *ngIf="showinterestssection">
+<div class="testimonials container" >
 
     <div class="section-title">
         <h2>Testimonials</h2>

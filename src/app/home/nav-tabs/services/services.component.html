@@ -1,59 +1,93 @@
-<div class="container">
+<!-- ======= Header ======= -->
+<header  id="header" class="header-top">
+    <div class="container">
 
-    <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-    </div>
+        <h1><a routerLink="/home">Emily Jones</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="mr-auto"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a> -->
+        <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
 
-    <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bxl-dribbble"></i></div>
-                <h4><a href="">Lorem Ipsum</a></h4>
-                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link" (click)="opentab($event)" id="hometab" name="home">Home</a></li>
+                <li><a class="nav-link" (click)="opentab($event)" id="abouttab" name="about">About</a></li>
+                <li><a class="nav-link" (click)="opentab($event)" id="resumetab" name="resume">Resume</a></li>
+                <li><a class="nav-link active" (click)="opentab($event)" id="servicestab" name="services">Services</a></li>
+                <li><a class="nav-link" (click)="opentab($event)" id="portfoliotab" name="portfolio">Portfolio</a></li>
+                <li><a class="nav-link" (click)="opentab($event)" id="contacttab" name="contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4><a href="">Sed ut perspiciatis</a></h4>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bx-tachometer"></i></div>
-                <h4><a href="">Magni Dolores</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bx-world"></i></div>
-                <h4><a href="">Nemo Enim</a></h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bx-slideshow"></i></div>
-                <h4><a href="">Dele cardo</a></h4>
-                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-                <div class="icon"><i class="bx bx-arch"></i></div>
-                <h4><a href="">Divera don</a></h4>
-                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
+        <div class="social-links">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
     </div>
+</header><!-- End Header -->
 
-</div>
+<!-- ======= Services Section ======= -->
+<section id="services" class="services section-show">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Services</h2>
+            <p>My Services</p>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                    <h4><a href="">Lorem Ipsum</a></h4>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-file"></i></div>
+                    <h4><a href="">Sed ut perspiciatis</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-tachometer"></i></div>
+                    <h4><a href="">Magni Dolores</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-world"></i></div>
+                    <h4><a href="">Nemo Enim</a></h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-slideshow"></i></div>
+                    <h4><a href="">Dele cardo</a></h4>
+                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-arch"></i></div>
+                    <h4><a href="">Divera don</a></h4>
+                    <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+</section><!-- End Services Section -->
