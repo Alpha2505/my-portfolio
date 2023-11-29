@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Title} from "@angular/platform-browser";
 import { Router, ActivatedRoute } from '@angular/router';
+import { appconstants } from '../Constants/app-constants';
 
 @Component({
   selector: 'app-home',
@@ -22,6 +23,8 @@ export class HomeComponent implements OnInit {
   servicesnavtab: string = 'servicestab';
   portfolionavtab: string = 'portfoliotab';
   contactnavtab: string = 'contacttab';
+  linkedURL : string = appconstants.LinkedinprofileURL;
+  githubURL : string = appconstants.GithubURL;
 
   constructor(private titleService:Title, private router: Router, private route: ActivatedRoute) {
     this.titleService.setTitle("Personal Bootstrap Template");

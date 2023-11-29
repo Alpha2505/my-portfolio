@@ -2,17 +2,26 @@
 <header  id="header" class="header-top">
     <div class="container">
 
-        <h1><a routerLink="/home">Emily Jones</a></h1>
+        <h1><a routerLink="/home">Geethanjali Ravichandra</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="mr-auto"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a> -->
-        <h2>I'm a passionate <span>graphic designer</span> from New York</h2>
+        <h2> <p class="mt-4" style="font-family:Raleway, sans-serif;">
+            🚀 Hi, I'm Geethanjali! Welcome to my digital abode! 
+        </p>
+        <p style="font-family:Raleway, sans-serif;">
+            I'm a Bengaluru-based full-stack developer, weaving digital wonders with a keyboard and a dash of creativity.<br>
+            Passionate about innovation and continuous growth, I navigate the tech universe with curiosity and precision.<br>
+            Beyond the screen, I'm an advocate for positive change, exploring diverse interests, and turning ideas into <br>
+            impactful solutions.Let's connect and create something amazing together!
+        </p>
+</h2>
 
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a class="nav-link" (click)="opentab($event)" id="hometab" name="home">Home</a></li>
                 <li><a class="nav-link active" (click)="opentab($event)" id="abouttab" name="about">About</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="resumetab" name="resume">Resume</a></li>
-                <li><a class="nav-link" (click)="opentab($event)" id="servicestab" name="services">Services</a></li>
+                <!-- <li><a class="nav-link" (click)="opentab($event)" id="servicestab" name="services">Services</a></li> -->
                 <li><a class="nav-link" (click)="opentab($event)" id="portfoliotab" name="portfolio">Portfolio</a></li>
                 <li><a class="nav-link" (click)="opentab($event)" id="contacttab" name="contact">Contact</a></li>
             </ul>
@@ -20,10 +29,8 @@
         </nav><!-- .navbar -->
 
         <div class="social-links">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a [href]="githubURL" target="_blank" class="github"><i class="bi bi-github"></i></a>
+            <a [href]="linkedURL" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
     </div>
@@ -36,7 +43,7 @@
 
     <div class="section-title">
         <h2>About</h2>
-        <p>Learn more about me</p>
+        <p>More about me</p>
     </div>
 
     <div class="row">
@@ -44,13 +51,12 @@
             <img src="./assets/img/me.jpg" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX &amp; Graphic Designer</h3>
-            <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua.
+            <h3>Unveiling the Coder, Creator, &amp; Compassionate Explorer</h3>
+            <p class="fst-italic mt-4 mb-4">
+                Hello there! I'm Geethanjali Ravichandra, a passionate full-stack developer based in Bengaluru, India, on a mission to bring digital dreams to life.
+                Welcome to my corner of the web, where lines of code converge with creativity.
             </p>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-6">
                     <ul>
                         <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
@@ -69,14 +75,52 @@
                         <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                     </ul>
                 </div>
-            </div>
-            <p>
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-                ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium
-                dolores.
-            </p>
+            </div> -->
+                <ul>
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>👩‍💻 Journey into the Digital Wonderland:</strong>     
+                    </li>
+                    <li>
+                        From sketching out project blueprints to seeing the final code come to life, I thrive in the dynamic world of web development. With a knack for turning innovative ideas into tangible solutions, I navigate the ever-evolving tech landscape with curiosity and precision.
+                    </li>
+                    
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>🌟 More Than a Developer:</strong>     
+                    </li>
+                    <li>       
+                        Beyond the screen and code, I am a fervent advocate for positive change. Engaging in corporate social responsibility initiatives, planting trees, and championing scholarship programs for underprivileged talents are not just checkboxes; they are my commitment to making a meaningful impact.
+                    </li>
+
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>🌐 Innovation at Every Turn:</strong>     
+                    </li>
+                    <li>
+                        Co-authoring papers accepted by IEEE conferences has been a testament to my dedication to pushing the boundaries of innovation. Every project is an opportunity to create, innovate, and contribute to the digital tapestry.
+                    </li>
+
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>🌈 Embracing Continuous Growth:</strong>     
+                    </li>
+                    <li>
+                        In the fast-paced tech universe, I am not just adapting; I'm thriving. Each line of code written is a step towards personal and professional growth. The learning journey is ongoing, and I'm excited about the uncharted territories ahead.
+                    </li>
+
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>🎨 Beyond the Binary:</strong>     
+                    </li>
+                    <li>
+                        When not immersed in the world of development, you'll find me exploring diverse interests. Whether it's experimenting in the kitchen, capturing moments with my camera, or losing myself in the pages of a compelling novel – life is a canvas, and I'm painting it with a vibrant palette.
+                    </li>
+
+                    <li><i class="bi bi-chevron-right"></i> 
+                        <strong>🚀 Let’s Connect and Create:</strong>     
+                    </li>
+                    <li>
+                        I believe in the power of collaboration. Whether you're a fellow developer, a dreamer with an idea, or someone passionate about positive change, let's connect. Together, we can create digital wonders and leave an indelible mark on the world.
+                    </li>
+                </ul>
+
+                <p>Thanks for stopping by. Let's embark on this digital journey together!</p>
         </div>
     </div>
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { appconstants } from 'src/app/Constants/app-constants';
 
 @Component({
   selector: 'app-services',
@@ -21,6 +22,8 @@ export class ServicesComponent implements OnInit {
   portfolionavtab: string = 'portfoliotab';
   contactnavtab: string = 'contacttab';
   showinterestssection: boolean = false;
+  linkedURL : string = appconstants.LinkedinprofileURL;
+  githubURL : string = appconstants.GithubURL;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 

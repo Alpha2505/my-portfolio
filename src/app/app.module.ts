@@ -10,6 +10,7 @@ import { ResumeComponent } from './home/nav-tabs/resume/resume.component';
 import { ServicesComponent } from './home/nav-tabs/services/services.component';
 import { PortfolioComponent } from './home/nav-tabs/portfolio/portfolio.component';
 import { ContactComponent } from './home/nav-tabs/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './home/nav-tabs/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
