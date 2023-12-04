@@ -11,6 +11,7 @@ import { ServicesComponent } from './home/nav-tabs/services/services.component';
 import { PortfolioComponent } from './home/nav-tabs/portfolio/portfolio.component';
 import { ContactComponent } from './home/nav-tabs/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ResumeComponent,
     ServicesComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

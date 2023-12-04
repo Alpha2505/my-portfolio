@@ -24,6 +24,12 @@ export class PortfolioComponent implements OnInit {
   showinterestssection: boolean = false;
   linkedURL : string = appconstants.LinkedinprofileURL;
   githubURL : string = appconstants.GithubURL;
+  id: any;
+  C1URL: string = appconstants.C1URL;
+  C2URL: string = appconstants.C2URL;
+  C3URL: string = appconstants.C3URL;
+  Pl1URL: string = appconstants.Pl1URL;
+  Pl2URL: string = appconstants.Pl2URL;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 
@@ -52,6 +58,11 @@ export class PortfolioComponent implements OnInit {
       this.router.navigate(['home']);
     }
   
+  }
+
+  openportfolio(event:any){
+    this.id = event.currentTarget.id;
+    this.router.navigate(['portfolioinfo/', this.id]);
   }
 
 }

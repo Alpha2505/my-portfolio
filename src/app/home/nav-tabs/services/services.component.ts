@@ -45,7 +45,9 @@ export class ServicesComponent implements OnInit {
       this.router.navigate(['contact']);
     }
     else if(event.target.name == this.portfoliotab){
-      this.router.navigate(['portfolio1']);
+      this.router.navigate(['portfolio']).then(()=>{
+        window.location.reload();
+      });
     }
     else{
       this.showinterestssection = true;
