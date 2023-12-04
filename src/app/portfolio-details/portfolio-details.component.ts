@@ -53,7 +53,7 @@ export class PortfolioDetailsComponent implements OnInit {
         this.category = 'Web Application';
         this.type  = 'Personal Project';
         this.date = 'August, 2023';
-        this.URL = 'https://github.com/Alpha2505/myapp';
+        this.URL = 'https://github.com/Alpha2505/my-portfolio';
         this.description = "•	Portfolio website is a personal or professional website that showcases an individual's work, skills, accomplishments, and experiences. •	It is a static website developed using Angular. A Bootstrap template is seamlessly integrated into the Angular project, ensuring a visually appealing and responsive design. •	Angular routing is implemented for a smooth and intuitive multipage website experience. •	The Portfolio is successfully hosted on GitHub Pages, showcasing a user-friendly interface for professional presentation. ";
        }
       else{
