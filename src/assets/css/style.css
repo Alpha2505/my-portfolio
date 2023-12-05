@@ -1188,3 +1188,10 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+.project-img{
+    width: 100px;
+    width: 25px;
+    width: 70%;
+    max-width: 70%;
+}
