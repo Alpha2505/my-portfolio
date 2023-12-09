@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   githubURL : string = appconstants.GithubURL;
 
   constructor(private titleService:Title, private router: Router, private route: ActivatedRoute) {
-    this.titleService.setTitle("Personal Bootstrap Template");
+    this.titleService.setTitle("Personal Website");
   }
 
   ngOnInit(): void {

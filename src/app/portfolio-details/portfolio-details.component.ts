@@ -17,7 +17,7 @@ export class PortfolioDetailsComponent implements OnInit {
   description : string = '';
 
   constructor(private titleService:Title, private router: Router, private route: ActivatedRoute) {
-    this.titleService.setTitle("Portfolio Details - Personal Bootstrap Template");
+    this.titleService.setTitle("Portfolio Details");
   }
 
   ngOnInit(): void {
