@@ -30,15 +30,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Option 1
 
-$ npm i angular-cli-ghpages --save-dev
-$ ng build --prod --base-href "https://GithubUserName.github.io/GithubRepoName/"
-$ npx angular-cli-ghpages --dir=dist/Project-name
+$ npm i angular-cli-ghpages --save-dev \n
+$ ng build --prod --base-href "https://GithubUserName.github.io/GithubRepoName/" \n
+$ npx angular-cli-ghpages --dir=dist/Project-name \n
 
 
 Option 2
 
-$ git checkout -b gh-pages
-$ git push origin gh-pages
-$ npm install -g angular-cli-ghpages
-$ ng build --prod --base-href `https://[username].github.io/[repo]/`
-$ ngh --dir=dist/[project-name]`
+$ git checkout -b gh-pages \n
+$ git push origin gh-pages \n
+$ npm install -g angular-cli-ghpages \n
+$ ng build --prod --base-href `https://[username].github.io/[repo]/` \n
+$ ngh --dir=dist/[project-name]` \n
